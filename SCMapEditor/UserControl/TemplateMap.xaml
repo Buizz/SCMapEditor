@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="TemplateMap"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:SCMapEditor"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Button  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Height="140" VerticalAlignment="Top" Width="138"
+                        Style="{StaticResource MaterialDesignFlatButton}" Click="OpenMap" Foreground="{DynamicResource {x:Static SystemColors.MenuTextBrushKey}}">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
+            <materialDesign:Card
+                            materialDesign:ShadowAssist.ShadowDepth="Depth1"
+                            Padding="32" Width="96" Height="96" HorizontalAlignment="Center" Margin="5,5,5,0" VerticalAlignment="Center">
+                지도 모양
+            </materialDesign:Card>
+            <TextBlock
+                        Style="{StaticResource MaterialDesignSubheadingTextBlock}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            빈 지도
+            </TextBlock>
+        </StackPanel>
+    </Button>
+</UserControl>
